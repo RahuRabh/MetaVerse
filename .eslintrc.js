@@ -3,10 +3,15 @@ module.exports = {
     browser: true,
     es2021: true,
   },
+  // extends: [
+  //   'plugin:react/recommended',
+  //   'airbnb',
+  // ],
   extends: [
-    'plugin:react/recommended',
-    'airbnb',
-  ],
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "next/core-web-vitals"
+],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -96,4 +101,5 @@ module.exports = {
       },
     ],
   },
+  "no-multiple-empty-lines": [2, {"max": 99999, "maxEOF": 0}]
 };
